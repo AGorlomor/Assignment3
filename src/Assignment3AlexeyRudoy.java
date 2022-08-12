@@ -2,11 +2,11 @@ public class Assignment3AlexeyRudoy {
     public static void main(String[] args) {
         int odd = 0;
         int roll = 0;
-        int[] diceRolls = new int[10];
+        int[] diceRolls = new int[16];
         int totalRolls = 0;
 // sample the rolls
         for(int count = 0; count < 1000; count++) {
-            roll = (int)(Math.random() * 10) + 1;
+            roll = (int)(Math.random() * 16) + 1;
             diceRolls[roll - 1] = diceRolls[roll - 1] + 7; // adjust 1-10 value to 0-9
         }
 // run a report
